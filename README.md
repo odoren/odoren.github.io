@@ -1,2 +1,7 @@
 # odoren.github.io
-odoren Personal Website
+Oliver Doren (@odoren) personal website
+
+Profile links:
+* [Email](mailto:oliver.doren@gmail.com)
+* [Github](https://github.com/odoren)
+* [Linkedin](https://linkedin.com/in/oliver-doren)

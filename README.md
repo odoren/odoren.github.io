@@ -1,5 +1,5 @@
 # odoren.github.io
-Oliver Doren (@odoren) personal website
+Oliver Doren (@odoren) personal website  
 Hosted at: https://odoren.github.io/
 
 Profile links:

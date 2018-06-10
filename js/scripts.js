@@ -8,7 +8,7 @@ function lightSwitch() {
 	if (state == 1) {
 		document.body.style.setProperty("--text-color", "#fff");
 		document.body.style.setProperty("--link-text-color", "#000");
-		document.body.style.setProperty("--background-color", "#000");
+		document.body.style.setProperty("--background-color", "#696969");
 		document.body.style.setProperty("--primary-color", "cyan");
 		document.body.style.setProperty("--secondary-color", "magenta");
 		document.body.style.setProperty("--state", 2);

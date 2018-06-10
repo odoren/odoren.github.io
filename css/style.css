@@ -2,41 +2,45 @@
 
 :root {
 	--state: 1;
-	--text-color: #000;
-	--link-text-color: #fff;
 	--background-color: #f4f4f4;
 	--primary-color: blue;
 	--secondary-color: red;
+	--text-color: #000;
+	--link-text-color: #fff;
 }
 
 body {
+	margin: 0;
 	background-color: var(--background-color);
-	font-family: "Roboto Mono", sans-serif;
+	font-family: "Roboto Mono", monospace;
 	text-transform: lowercase;
 	color: var(--text-color);
-	margin: 0;
 }
 
 h1 {
-	font-size: 2em;
 	margin: 0 auto;
+	font-size: 2em;
 }
 
 h2 {
-	text-transform: lowercase;
-	font-size: 1em;
 	margin: 0 auto;
 	padding-left: 5px;
+	font-size: 1em;
 }
 
 .container {
-	position: relative;
- 	display: block;
- 	overflow: hidden;
-	width: 80%;
-	min-height: 100vh;
-	margin: 0 auto;
+	padding: 0 20px;
+	height: 100vh;
+	max-width: 100%;
 }
+
+/* outline container divs for debugging */
+/*
+.container div {
+	border: solid 1px;
+	border-collapse: collapse;
+}
+*/
 
 .nav-box {
 	overflow: hidden;
@@ -69,9 +73,9 @@ h2 {
 }
 
 .content-box a {
+	background-color: var(--primary-color);
 	font-style: italic;
 	text-decoration: underline;
-	background-color: var(--primary-color);
 	color: var(--link-text-color);
 }
 
@@ -90,10 +94,45 @@ h2 {
 }
 
 .footer-box {
-	position: absolute;
-	width: 100%;
+	position: fixed;
+	left: 0;
 	bottom: 0;
-	font-size: 0.5em;
-	text-align: center;
+	width: 100%;
 	background-color: var(--background-color);
+	text-align: center;
+	font-size: 0.5em;
 }
+
+@media (min-width: 500px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+
+@media (max-height: 300px) {
+	/** footer hides when resizing to 300px height */
+	.footer-box {
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	/** footer overlaps when resizing to 300px height */
+	/*
+	.container {
+		padding-bottom: 50px;
+		height: 100%;
+		
+	}
+	*/
+}
+
+
+

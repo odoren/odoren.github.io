@@ -98,6 +98,7 @@ h2 {
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	padding-bottom: 10px;
 	background-color: var(--background-color);
 	text-align: center;
 	font-size: 0.5em;
@@ -121,7 +122,6 @@ h2 {
 	.footer-box {
 		position: relative;
 		padding-top: 20px;
-		padding-bottom: 10px;
 	}
 
 	/** footer overlaps when resizing to 300px height */

@@ -2,7 +2,7 @@
 Oliver Doren (odoren) personal website 
 
 Hosted at:
-* https://odoren.github.io/
+* [odoren.github.io](https://odoren.github.io)
 * [oliverdoren.com](http://oliverdoren.com)
 * [oliver.computer](http://oliver.computer)
 

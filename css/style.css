@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono);
 
+/* Theme colors and state, changeable by lightSwitch() function */
 :root {
 	--state: 1;
 	--background-color: #f4f4f4;
@@ -33,14 +34,6 @@ h2 {
 	height: 100vh;
 	max-width: 100%;
 }
-
-/* outline container divs for debugging */
-/*
-.container div {
-	border: solid 1px;
-	border-collapse: collapse;
-}
-*/
 
 .nav-box {
 	overflow: hidden;
@@ -103,6 +96,14 @@ h2 {
 	text-align: center;
 	font-size: 0.5em;
 }
+
+/** outline container divs for aligning/debugging */
+/*
+.container div {
+	border: solid 1px;
+	border-collapse: collapse;
+}
+*/
 
 @media (min-width: 500px) {
   .container {

@@ -1,7 +1,13 @@
+/** Writes "last modified" data to footer */
 function lastModifiedFooter() {
 	return document.write("last modified: " + new Date(document.lastModified).toLocaleDateString());
 }
 
+/** 
+ * "Light switch" theme changer
+ * Default state is "on" (root CSS var --state is equal to 1)
+ * Clicking the switch changes the theme colors and state
+ */
 function lightSwitch() {
 	var style = getComputedStyle(document.body);
 	var state = style.getPropertyValue("--state");

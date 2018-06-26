@@ -17,7 +17,7 @@ function lightSwitch() {
 		document.body.style.setProperty("--background-color", "#696969");
 		document.body.style.setProperty("--primary-color", "cyan");
 		document.body.style.setProperty("--secondary-color", "magenta");
-		document.style.setProperty("--state", 2);
+		document.body.style.setProperty("--state", 2);
 	}
 	else {
 		document.body.style.setProperty("--text-color", "#000");

@@ -35,7 +35,10 @@ Domains:
 	  s.parentNode.insertBefore(t,s)}(window, document,'script',
 	  'https://connect.facebook.net/en_US/fbevents.js');
 	  fbq('init', '756357141488277');
-	  fbq('track', 'PageView');
+	  fbq('track', 'PageView')
+	  var properties = JSON.parse('{"content_category":"Deals","list_id":"hot_deals_1","content_type":"product","content_ids":["507f1f77bcf86cd799439011","505bd76785ebb509fc183733"],"contents":[{"id":"507f1f77bcf86cd799439011","sku":"45790-32","category":"Games","name":"Monopoly: 3rd Edition","price":19,"position":1},{"id":"505bd76785ebb509fc183733","sku":"46493-32","category":"Games","name":"Uno Card Game","price":3,"position":2}]}')
+	  console.log(properties)	  
+	  fbq('track', 'ViewContent', properties)
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	  src="https://www.facebook.com/tr?id=756357141488277&ev=PageView&noscript=1"

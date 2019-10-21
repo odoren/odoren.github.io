@@ -43,9 +43,9 @@ function switchLight() {
 
 /** Writes "last modified" data to footer */
 function insertLastModifiedFooter() {
-	var footer = document.getElementById("last-modified-footer");
-	var lastModifiedFooter = document.createElement("p");
-	var text = document.createTextNode("last modified: " + new Date(document.lastModified).toLocaleDateString());
+	const footer = document.getElementById("last-modified-footer");
+	const lastModifiedFooter = document.createElement("p");
+	const text = document.createTextNode("last modified: " + new Date(document.lastModified).toLocaleDateString());
 	lastModifiedFooter.append(text);
 	footer.append(lastModifiedFooter);
 }

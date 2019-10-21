@@ -2,7 +2,10 @@ window.onload=function() {
 	/** Load "last modified" footer */
 	insertLastModifiedFooter();
 
-	/** Load contact link tracking */
+	/** 
+	 * Load contact link tracking 
+	 * Use bind() method to avoid immediate execution of track() call
+	 */
 	const queryResult = document.getElementsByClassName("contact-link");
 	Array.from(queryResult).forEach(function(element) {
 		element.addEventListener("click", analytics.track.bind(this, "Contact Clicked", {
@@ -10,7 +13,10 @@ window.onload=function() {
 		}))
 	});
 
-	/** Load light switch button tracking */
+	/** 
+	 * Load light switch tracking 
+	 * Use bind() method to avoid immediate execution of track() call
+	 */
 	const lightSwitch = document.getElementById("light-switch");
 	lightSwitch.addEventListener("click", switchLight);
 	lightSwitch.addEventListener("click", analytics.track.bind(this, "Light Switched"));

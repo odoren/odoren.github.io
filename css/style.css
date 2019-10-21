@@ -2,7 +2,7 @@
 
 /* Theme colors and state, changeable by lightSwitch() function */
 :root {
-	--state: 1;
+	--state: 0;
 	--background-color: #f4f4f4;
 	--primary-color: blue;
 	--secondary-color: red;

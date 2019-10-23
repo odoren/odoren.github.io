@@ -63,8 +63,10 @@ h2 {
 
 .content-box {
 	padding-top: 20px;
+	margin-top: 10px;
 }
 
+/**
 .content-box a {
 	background-color: var(--primary-color);
 	font-style: italic;
@@ -85,6 +87,7 @@ h2 {
 	margin-top: 20px;
 	list-style: none;
 }
+*/
 
 .footer-box {
 	position: fixed;
@@ -95,6 +98,39 @@ h2 {
 	background-color: var(--background-color);
 	text-align: center;
 	font-size: 0.5em;
+}
+
+a.contact-link {
+	display: block;
+	width: 100px;
+	height: auto;
+	margin: 10px;
+	--aug-border: 5px;
+	--aug-inset: 5px;
+	padding: 20px 45px 20px 15px;
+	text-align: center;
+	color: var(--link-text-color);
+	text-decoration: none;
+	--aug-border-bg: var(--primary-color);
+	--aug-inset-bg: var(--primary-color);
+}
+
+a.contact-link:hover {
+	display: block;
+	width: 100px;
+	height: auto;
+	margin: 10px;
+	--aug-border: 5px;
+	--aug-inset: 5px;
+	padding: 20px 45px 20px 15px;
+	text-align: center;
+	color: var(--link-text-color);
+	text-decoration: none;
+	--aug-border-bg: var(--secondary-color);
+	--aug-inset-bg: var(--secondary-color);
+	-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        	transform: scale(1.1);
 }
 
 /** outline container divs for aligning/debugging */

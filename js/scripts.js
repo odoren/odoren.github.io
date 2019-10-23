@@ -5,6 +5,11 @@ window.onload=function() {
 	/** Load "last modified" footer */
 	insertLastModifiedFooter();
 
+	/** Add event listener to light switch */
+	const lightSwitch = document.getElementById("light-switch");
+	lightSwitch.addEventListener("click", switchLight);
+
+
 	if (tracking == true) {
 		/** Home page() call */
 		analytics.page("Home");
@@ -18,11 +23,10 @@ window.onload=function() {
 		});	
 
 		/** Load light switch tracking */
-		const lightSwitch = document.getElementById("light-switch");
-		lightSwitch.addEventListener("click", switchLight);
 		lightSwitch.addEventListener("click", function() {
 			analytics.track("Light Switched");
 		});
+		
 	}
 }
 

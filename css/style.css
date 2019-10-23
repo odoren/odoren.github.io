@@ -59,10 +59,11 @@ h2 {
 }
 
 .subheader-box {
+	margin-bottom: 20px;
 }
 
+
 .content-box {
-	padding-top: 20px;
 	margin-top: 10px;
 }
 
@@ -123,6 +124,7 @@ a.contact-link:hover {
 	--aug-border: 1px;
 	--aug-inset: 5px;
 	padding: 10px 30px 15px 25px;
+	cursor: pointer;
 	text-align: left;
 	color: var(--link-text-color);
 	text-decoration: none;
@@ -133,13 +135,62 @@ a.contact-link:hover {
         	transform: scale(1.1);
 }
 
+div.content-category {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: auto;
+	margin: 0px;
+	--aug-border: 1px;
+	--aug-inset: 5px;
+	padding: 10px 30px 15px 25px;
+	text-align: left;
+	color: var(--link-text-color);
+	text-decoration: none;
+	--aug-border-bg: var(--text-color);
+	--aug-inset-bg: var(--primary-color);
+}
+
+div.content-category:hover {
+	--aug-border-bg: var(--text-color);
+	--aug-inset-bg: var(--secondary-color);
+	-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        	transform: scale(1.1);
+}
+
+div.content-details {
+	vertical-align: top;
+	margin: 0px;
+	padding-left: 40px;
+	display: none;
+}
+
+div.content-details h3 {
+	margin-bottom: 1px;
+	padding-left: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+div.content-details p {
+	margin: 1px;
+	padding-left: 5px;
+	font-size: 0.8em;
+}
+
+div.content-category:hover + div.content-details {
+	display: inline-block;
+	position: fixed;
+}
+
 /** outline container divs for aligning/debugging */
-/*
+
 .container div {
 	border: solid 1px;
 	border-collapse: collapse;
 }
-*/
+
 
 @media (min-width: 500px) {
   .container {

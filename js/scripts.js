@@ -2,24 +2,20 @@ window.onload=function() {
 	/** Load "last modified" footer */
 	insertLastModifiedFooter();
 
-	/** 
-	 * Load contact link tracking 
-	 * Use bind() method to avoid immediate execution of track() call
-	 */
+	/* Load contact link tracking */
 	const queryResult = document.getElementsByClassName("contact-link");
 	Array.from(queryResult).forEach(function(element) {
-		element.addEventListener("click", analytics.track.bind(this, "Contact Clicked", {
-			contactType: element.id
-		}))
-	});
+		element.addEventListener("click", function() {
+			analytics.track("Contact Clicked", { contactType: element.id })
+		})
+	});	
 
-	/** 
-	 * Load light switch tracking 
-	 * Use bind() method to avoid immediate execution of track() call
-	 */
+	/* Load light switch tracking */
 	const lightSwitch = document.getElementById("light-switch");
 	lightSwitch.addEventListener("click", switchLight);
-	lightSwitch.addEventListener("click", analytics.track.bind(this, "Light Switched"));
+	lightSwitch.addEventListener("click", function() {
+		analytics.track("Light Switched");
+	});
 }
 
 /** 

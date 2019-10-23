@@ -2,7 +2,7 @@ window.onload=function() {
 	/** Load "last modified" footer */
 	insertLastModifiedFooter();
 
-	/* Load contact link tracking */
+	/** Load contact link tracking */
 	const queryResult = document.getElementsByClassName("contact-link");
 	Array.from(queryResult).forEach(function(element) {
 		element.addEventListener("click", function() {
@@ -10,7 +10,7 @@ window.onload=function() {
 		})
 	});	
 
-	/* Load light switch tracking */
+	/** Load light switch tracking */
 	const lightSwitch = document.getElementById("light-switch");
 	lightSwitch.addEventListener("click", switchLight);
 	lightSwitch.addEventListener("click", function() {
@@ -20,7 +20,7 @@ window.onload=function() {
 
 /** 
  * "Light switch" theme changer
- * Default state is "on" (root CSS var --state is equal to 1)
+ * Default state is "on" (root CSS var --state is equal to 0)
  * Clicking the switch changes the theme colors and state
  */
 function switchLight() {

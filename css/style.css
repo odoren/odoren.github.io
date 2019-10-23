@@ -105,13 +105,13 @@ a.contact-link {
 	width: 100px;
 	height: auto;
 	margin: 10px;
-	--aug-border: 5px;
+	--aug-border: 1px;
 	--aug-inset: 5px;
-	padding: 20px 45px 20px 15px;
-	text-align: center;
+	padding: 10px 30px 15px 25px;
+	text-align: left;
 	color: var(--link-text-color);
 	text-decoration: none;
-	--aug-border-bg: var(--primary-color);
+	--aug-border-bg: var(--text-color);
 	--aug-inset-bg: var(--primary-color);
 }
 
@@ -120,13 +120,13 @@ a.contact-link:hover {
 	width: 100px;
 	height: auto;
 	margin: 10px;
-	--aug-border: 5px;
+	--aug-border: 1px;
 	--aug-inset: 5px;
-	padding: 20px 45px 20px 15px;
-	text-align: center;
+	padding: 10px 30px 15px 25px;
+	text-align: left;
 	color: var(--link-text-color);
 	text-decoration: none;
-	--aug-border-bg: var(--secondary-color);
+	--aug-border-bg: var(--text-color);
 	--aug-inset-bg: var(--secondary-color);
 	-webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);

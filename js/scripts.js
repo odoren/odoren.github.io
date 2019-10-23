@@ -1,21 +1,29 @@
+/** "Tracking" flag for Analytics.js methods */
+const tracking = false
+
 window.onload=function() {
 	/** Load "last modified" footer */
 	insertLastModifiedFooter();
 
-	/** Load contact link tracking */
-	const queryResult = document.getElementsByClassName("contact-link");
-	Array.from(queryResult).forEach(function(element) {
-		element.addEventListener("click", function() {
-			analytics.track("Contact Clicked", { contactType: element.id })
-		})
-	});	
+	if (tracking == true) {
+		/** Home page() call */
+		analytics.page("Home");
 
-	/** Load light switch tracking */
-	const lightSwitch = document.getElementById("light-switch");
-	lightSwitch.addEventListener("click", switchLight);
-	lightSwitch.addEventListener("click", function() {
-		analytics.track("Light Switched");
-	});
+		/** Load contact link tracking */
+		const queryResult = document.getElementsByClassName("contact-link");
+		Array.from(queryResult).forEach(function(element) {
+			element.addEventListener("click", function() {
+				analytics.track("Contact Clicked", { contactType: element.id })
+			})
+		});	
+
+		/** Load light switch tracking */
+		const lightSwitch = document.getElementById("light-switch");
+		lightSwitch.addEventListener("click", switchLight);
+		lightSwitch.addEventListener("click", function() {
+			analytics.track("Light Switched");
+		});
+	}
 }
 
 /** 

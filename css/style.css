@@ -29,6 +29,29 @@ h2 {
 	font-size: 1em;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li {
+	color: #000;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+ul li::before {
+	content: '';
+	border: 1px solid #000;
+	background: #000;
+	background-clip: content-box;
+	padding: 2px;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	left: -20px;
+	top: 3px;
+}
+
 .container {
 	padding: 0 20px;
 	height: 100vh;
@@ -56,6 +79,7 @@ h2 {
 
 .header-box {
 	padding-top: 10px;
+	margin-bottom: 20px;
 }
 
 .subheader-box {
@@ -65,7 +89,7 @@ h2 {
 
 .content-box {
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 15px;
 	clear: left;
 	float: left;
 }
@@ -154,14 +178,6 @@ div.content-category {
 	--aug-inset-bg: var(--primary-color);
 }
 
-div.content-category:hover, div.content-box:hover div.content-category {
-	--aug-border-bg: var(--text-color);
-	--aug-inset-bg: var(--secondary-color);
-	-webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        	transform: scale(1.1);
-}
-
 div.content-details {
 	vertical-align: top;
 	margin: 0px;
@@ -170,19 +186,26 @@ div.content-details {
 }
 
 div.content-details h3 {
-	margin-bottom: 1px;
 	padding-left: 5px;
 	font-size: 0.8em;
 	font-weight: bold;
 }
 
 div.content-details p {
-	margin: 1px;
+	padding-top: 0;
 	padding-left: 5px;
 	font-size: 0.8em;
 }
 
-div.content-category:hover + div.content-details, div.content-details:hover {
+div.content-box:hover div.content-category {
+	--aug-border-bg: var(--text-color);
+	--aug-inset-bg: var(--secondary-color);
+	-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        	transform: scale(1.1);
+}
+
+div.content-box:hover div.content-details {
 	display: inline-block;
 	position: fixed;
 }

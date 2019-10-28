@@ -64,7 +64,10 @@ h2 {
 
 
 .content-box {
+	display: inline-block;
 	margin-top: 10px;
+	clear: left;
+	float: left;
 }
 
 /**
@@ -151,7 +154,7 @@ div.content-category {
 	--aug-inset-bg: var(--primary-color);
 }
 
-div.content-category:hover {
+div.content-category:hover, div.content-box:hover div.content-category {
 	--aug-border-bg: var(--text-color);
 	--aug-inset-bg: var(--secondary-color);
 	-webkit-transform: scale(1.1);

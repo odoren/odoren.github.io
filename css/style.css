@@ -179,18 +179,18 @@ div.content-details p {
 	font-size: 0.8em;
 }
 
-div.content-category:hover + div.content-details {
+div.content-category:hover + div.content-details, div.content-details:hover {
 	display: inline-block;
 	position: fixed;
 }
 
 /** outline container divs for aligning/debugging */
-
+/*
 .container div {
 	border: solid 1px;
 	border-collapse: collapse;
 }
-
+*/
 
 @media (min-width: 500px) {
   .container {
